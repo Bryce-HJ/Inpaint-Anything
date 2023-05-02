@@ -41,7 +41,7 @@ python remove_OAOA.py \
     --lama_ckpt ./pretrained_models/big-lama \
 ```
 
-You only need to change `--input_img` to your picture's path, and input the bboxes in the format of <x1, y1, x2, y2> in line 73 of [remove_OAOA.py](remove_OAOA.py).
+You only need to change `--input_img` to your picture's path, and input the bboxes in the format of <x1, y1, x2, y2> in line 73 of [remove_OAOA.py](remove_OAOA.py#L73).
 
 ### Demo
 <table>
