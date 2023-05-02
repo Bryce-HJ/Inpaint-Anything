@@ -6,7 +6,7 @@
 TL; DR: Users can select any object in an image by clicking on it. With powerful vision models, e.g., [SAM](https://arxiv.org/abs/2304.02643), [LaMa](https://arxiv.org/abs/2109.07161) and [Stable Diffusion (SD)](https://arxiv.org/abs/2112.10752), **Inpaint Anything** is able to remove the object smoothly (i.e., *Remove Anything*). Further, prompted by user input text, Inpaint Anything can fill the object with any desired content (i.e., *Fill Anything*) or replace the background of it arbitrarily (i.e., *Replace Anything*).
 
 ## 📜 News
-[2023/4/24] Enabling removing numerous objects while inputing multiple bboxs, hence making it convinient to *P* your pictures!\
+[2023/4/24] Enabling removing numerous objects while inputing multiple bboxs, hence making it convinient to **P** your pictures!\
 
 
 ## <span id="remove-anything">📌 Remove Anything</span>
