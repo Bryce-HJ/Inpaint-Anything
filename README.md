@@ -6,7 +6,7 @@
 TL; DR: Users can select any object in an image by clicking on it. With powerful vision models, e.g., [SAM](https://arxiv.org/abs/2304.02643), [LaMa](https://arxiv.org/abs/2109.07161) and [Stable Diffusion (SD)](https://arxiv.org/abs/2112.10752), **Inpaint Anything** is able to remove the object smoothly (i.e., *Remove Anything*). Further, prompted by user input text, Inpaint Anything can fill the object with any desired content (i.e., *Fill Anything*) or replace the background of it arbitrarily (i.e., *Replace Anything*).
 
 ## 📜 News
-[2023/4/24] Enabling removing numerous objects while inputing multiple bboxs, hence making it convinient to **P** your pictures!\
+[2023/5/02] Enabling removing numerous objects while inputing multiple bboxs, hence making it convinient to **P** your pictures!\
 
 ## <span id="remove-anything">📌 Remove Anything</span>
 
@@ -29,21 +29,19 @@ Download the model checkpoints provided in [segment_anything](./segment_anything
 and [lama](./lama/README.md) (e.g. [sam_vit_h_4b8939.pth](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth) 
 and [big-lama](https://disk.yandex.ru/d/ouP6l8VJ0HpMZg)), and put them into `./pretrained_models`.
 
-Specify an image and a point, and Inpaint-Anything will remove the object at the point.
+Specify an image and multiple bboxes which you want to erase them, and Inpaint-Anything will remove the object in the area of pre-selected bboxes.
 ```bash
-python remove_anything.py \
-    --input_img ./example/remove-anything/dog.jpg \
-    --coords_type key_in \
-    --point_coords 200 450 \
-    --point_labels 1 \
+python remove_OAOA.py \
+    --input_img ./example/remove-anything/17331682166557_.pic.jpg \
     --dilate_kernel_size 15 \
     --output_dir ./results \
     --sam_model_type "vit_h" \
     --sam_ckpt ./pretrained_models/sam_vit_h_4b8939.pth \
-    --lama_config ./lama/configs/prediction/default.yaml \
-    --lama_ckpt ./pretrained_models/big-lama
+    --lama_config ./lama_init_bak/configs/prediction/default.yaml \
+    --lama_ckpt ./pretrained_models/big-lama \
 ```
-You can change `--coords_type key_in` to `--coords_type click` if your machine has a display device. If `click` is set, after running the above command, the image will be displayed. (1) Use *left-click* to record the coordinates of the click. It supports modifying points, and only last point coordinates are recorded. (2) Use *right-click* to finish the selection.
+
+You only need to change `--input_img` to your picture's path, and input the bboxes in the format of <x1, y1, x2, y2> in line 73 of remove_OAOA.py.
 
 ### Demo
 <table>
