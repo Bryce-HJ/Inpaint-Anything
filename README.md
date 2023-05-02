@@ -52,32 +52,6 @@ You only need to change `--input_img` to your picture's path, and input the bbox
   </tr>
 </table>
 
-<table>
-  <tr>
-    <td><img src="./example/remove-anything/bridge/with_points.png" width="100%"></td>
-    <td><img src="./example/remove-anything/bridge/with_mask.png" width="100%"></td>
-    <td><img src="./example/remove-anything/bridge/inpainted_with_mask.png" width="100%"></td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td><img src="./example/remove-anything/boat/with_points.png" width="100%"></td>
-    <td><img src="./example/remove-anything/boat/with_mask.png" width="100%"></td>
-    <td><img src="./example/remove-anything/boat/inpainted_with_mask.png" width="100%"></td>
-  </tr>
-</table>
-
-
-<table>
-  <tr>
-    <td><img src="./example/remove-anything/baseball/with_points.png" width="100%"></td>
-    <td><img src="./example/remove-anything/baseball/with_mask.png" width="100%"></td>
-    <td><img src="./example/remove-anything/baseball/inpainted_with_mask.png" width="100%"></td>
-  </tr>
-</table>
-
-
 ## Acknowledgments
 - [Segment Anything](https://github.com/facebookresearch/segment-anything)
 - [LaMa](https://github.com/advimman/lama)
