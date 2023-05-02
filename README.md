@@ -8,21 +8,7 @@ TL; DR: Users can select any object in an image by clicking on it. With powerful
 ## 📜 News
 [2023/4/24] Enabling removing numerous objects while inputing multiple bboxs, hence making it convinient to **P** your pictures!\
 
-
 ## <span id="remove-anything">📌 Remove Anything</span>
-
-
-<!-- <table>
-  <tr>
-    <td><img src="./example/remove-anything/dog/with_points.png" width="100%"></td>
-    <td><img src="./example/remove-anything/dog/with_mask.png" width="100%"></td>
-    <td><img src="./example/remove-anything/dog/inpainted_with_mask.png" width="100%"></td>
-  </tr>
-</table> -->
-
-<p align="center">
-    <img src="./example/GIF/Remove-dog.gif"  alt="image" style="width:400px;">
-</p>
 
 
 **Click** on an object in the image, and Inpainting Anything will **remove** it instantly!
@@ -37,10 +23,6 @@ python -m pip install torch torchvision torchaudio
 python -m pip install -e segment_anything
 python -m pip install -r lama/requirements.txt 
 ```
-On Windows system, we recommend to first install [miniconda](https://docs.conda.io/en/latest/miniconda.html) and 
-open `Anaconda Powershell Prompt (miniconda3)` as administrator.
-Then pip install [./lama_requirements_windows.txt](lama_requirements_windows.txt) instead of 
-[./lama/requirements.txt](lama%2Frequirements.txt).
 
 ### Usage
 Download the model checkpoints provided in [segment_anything](./segment_anything/README.md) 
