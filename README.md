@@ -47,7 +47,7 @@ You only need to change `--input_img` to your picture's path, and input the bbox
 <table>
   <tr>
     <td><img src="./asset/init.jpg" width="120%"></td>
-    <td><img src="./asset/remove_bbox.jpg" width="50%"></td>
+    <td><img src="./asset/remove_bbox.jpg" width="80%"></td>
     <td><img src="./asset/remove_final.png" width="120%"></td>
   </tr>
 </table>
